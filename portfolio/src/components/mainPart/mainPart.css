@@ -1,0 +1,105 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    font-weight: 400;
+}
+.img{
+    width: min(332.8px, 80%);
+    height: min(412px, 75%);
+    position: relative;
+    z-index: -1;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.name{
+    width: min(550px, 85%);
+}
+.name h2{
+    font-size: 2.8rem;
+}
+.desc p{
+    font-size: 1rem;
+}
+.img{
+    z-index: 0;
+}
+.img::after, .img::before{
+    content: '';
+    position: absolute;
+    inset: -5px;
+    z-index: -1;
+    background: conic-gradient(from var(--angle), #1008b9, #0d0c20, #22c6ce, #0d0c20, #1008b9 );
+    border-radius: 50%;
+}
+
+.img::before{
+    z-index: -2;
+    opacity: 0.4;
+    filter: blur(30px);
+}
+
+.img:hover::after, .img:hover::before{
+    animation: flip-in 2s infinite linear;
+}
+
+.grid{
+    z-index: -100;
+    background: url('./../../assets/grid.webp'), #080916;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+}
+.stain{
+    z-index: -1;
+    width: 400px;
+    height: 280px;
+    border-radius: 20rem;
+    background-color: #1008b9;
+    position: absolute;
+    right: 50rem;
+    bottom: 3rem;
+    filter: blur(45px);
+    opacity: 0.7;
+}
+@media(max-width: 815px){
+    .name{
+        width: min(350px, 85%);
+    }
+}
+
+@media(max-width: 679px){
+    .main{
+        flex-direction: column;
+    }
+    .stain{
+        right: 12rem;
+        bottom: 5rem;
+    }
+}
+
+@property --angle{
+    syntax: '<angle>';
+    initial-value: 53deg;
+    inherits: false;
+}
+
+@keyframes flip-in{
+    from{
+        --angle: 53deg;
+    }to{
+        --angle: 413deg;
+    }
+}
+
