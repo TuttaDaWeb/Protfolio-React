@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import Project1 from './../../assets/anime.png'
 import './projects.css'
 
 function Projects(){
 
     const [projects, setProjects] = useState([
-        {project: "Anime Landing Page", image: }
+        {project: "Anime Login Screen", image: Project1 }
     ])
 
     return(
