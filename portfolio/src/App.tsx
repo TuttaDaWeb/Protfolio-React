@@ -1,13 +1,17 @@
 import NavBar from './components/navbar/navBar'
 import Main from './components/mainPart/mainPart'
+import Skills from './components/Skills/skills'
+import Projects from './components/projects/projects'
 import './App.css'
 
 function App() {
 
   return (
     <>
-    <NavBar />
-    <Main/>
+      <NavBar />
+      <Main />
+      <Skills />
+      <Projects />
     </>
   )
 }

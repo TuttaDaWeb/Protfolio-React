@@ -73,19 +73,21 @@
     filter: blur(45px);
     opacity: 0.7;
 }
-@media(max-width: 815px){
-    .name{
-        width: min(350px, 85%);
-    }
-}
-
-@media(max-width: 679px){
+@media(max-width: 887px){
     .main{
         flex-direction: column;
     }
     .stain{
         right: 12rem;
         bottom: 5rem;
+    }
+    .name{
+        width: min(350px, 85%);
+    }
+}
+@media(max-width: 328px){
+    .img{
+        margin-top: 1.5rem;
     }
 }
 
