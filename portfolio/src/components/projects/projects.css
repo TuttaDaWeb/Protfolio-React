@@ -1,0 +1,21 @@
+.projects-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+.project-portfolio{
+    background-color: rgb(243, 243, 243);
+    padding: min(2em, 4%);
+    border-radius: 2rem;
+    gap: 1.5rem;
+}
+.project-portfolio img{
+    border-radius: 1.5rem;
+    max-width: 100%;
+    height: auto;
+}
+.project-portfolio h2{
+    font-size: 2rem;
+}

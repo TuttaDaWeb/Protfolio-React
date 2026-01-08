@@ -1,7 +1,8 @@
 import EnglishIcon from './../../assets/englishIcon.webp'
-import PortugueseIcon from './../../assets/portugueseIcon.webp'
+import JavaScriptIcon from './../../assets/javascript icon.webp'
 import ReactIcon from './../../assets/reactIcon.png'
 import TypeScript from './../../assets/typescript.webp'
+import PortugueseIcon from './../../assets/portugueseIcon.webp'
 import { useState } from "react";
 import './skills.css'
 
@@ -10,7 +11,8 @@ function Skills(){
         {skill: "English", icon: EnglishIcon}, 
         {skill: "Portuguese", icon: PortugueseIcon},
         {skill: "React", icon: ReactIcon},
-        {skill: "TypeScript", icon: TypeScript}
+        {skill: "TypeScript", icon: TypeScript},
+        {skill: "JavaScript", icon: JavaScriptIcon},
     ])
 
     return(
@@ -25,9 +27,8 @@ function Skills(){
                     </div>))}
                 </div>
             </div>
-            <div className="grid"></div>
-            <div className="stain_2"></div>
         </div>
+        <div className="stain_2"></div>
         </>
     )
 }

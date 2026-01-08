@@ -1,0 +1,43 @@
+.contact{
+    height: 80dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact h1{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.card{
+    color: rgb(9, 43, 87);
+    background-image: url(./../../assets/Profile-Picture.jpg);
+    background-size: cover;
+    padding: 12.5rem 0rem 0;
+    max-height: 50rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: transform .6s ease;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-content{
+    padding: 1.5rem;
+    background: linear-gradient(
+        rgb(0, 0, 0, 0),
+        rgb(0, 0, 0, 0.35) 30%,
+        rgb(0, 0, 0, 1)
+    );
+    transform: translateY(85%);
+    transition: transform .5s ease-in;
+}
+.card:hover .card-content{
+    transform: translateY(0);
+}
+.card-title{
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}

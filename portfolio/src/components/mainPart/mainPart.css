@@ -14,7 +14,7 @@
     width: min(332.8px, 80%);
     height: min(412px, 75%);
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 .img img{
     width: 100%;
@@ -29,9 +29,6 @@
 }
 .desc p{
     font-size: 1rem;
-}
-.img{
-    z-index: 0;
 }
 .img::after, .img::before{
     content: '';
