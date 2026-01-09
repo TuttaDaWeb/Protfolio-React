@@ -13,7 +13,6 @@ function Skills({ refProp }: SectionProps) {
 
   const language = [
     { skill: "English", icon: EnglishIcon }, 
-    { skill: "Portuguese", icon: PortugueseIcon },
     { skill: "React", icon: ReactIcon },
     { skill: "TypeScript", icon: TypeScriptIcon },
     { skill: "JavaScript", icon: JavaScriptIcon },

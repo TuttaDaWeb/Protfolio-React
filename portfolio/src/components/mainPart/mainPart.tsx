@@ -1,7 +1,7 @@
-import Picture from './../../assets/Profile-Picture.jpg'
+import Picture from './../../assets/profile-picture-2.jpeg'
 import './mainPart.css'
 
-interface SectionProps { 
+interface SectionProps {  
     refProp: React.RefObject<HTMLDivElement | null>; 
 }
 
