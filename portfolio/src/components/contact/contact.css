@@ -8,14 +8,12 @@
 .contact h1{
     color: white;
     font-weight: 700;
-    margin-bottom: 1rem;
 }
 .card{
-    color: rgb(9, 43, 87);
     background-image: url(./../../assets/Profile-Picture.jpg);
     background-size: cover;
     padding: 12.5rem 0rem 0;
-    max-height: 50rem;
+    max-height: min(50rem, 85%);
     border-radius: 2rem;
     overflow: hidden;
     transition: transform .6s ease;
@@ -40,4 +38,30 @@
     font-weight: 600;
     margin-bottom: 12px;
     font-size: 1.6rem;
+    color: rgb(5, 26, 53);
+}
+.card-informations{
+    opacity: 0;
+    transition: opacity 450ms ease-in;
+    transition-delay: 360ms;
+}
+.card:hover .card-informations{
+    opacity: 1;
+}
+
+.phone, .e-mail, .federal-unit{
+    color: rgb(236, 236, 236);
+}
+
+@media(max-width: 884px){
+    .card-content{
+        transform: translateY(0);
+    }
+    .card-informations{
+        opacity: 1;
+    }
+    .card{
+        transform: scale(1.05);
+        margin-top: 1rem;
+    }
 }

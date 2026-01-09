@@ -1,13 +1,17 @@
 import Picture from './../../assets/Profile-Picture.jpg'
 import './mainPart.css'
 
-function Main(){
+interface SectionProps { 
+    refProp: React.RefObject<HTMLDivElement | null>; 
+}
+
+function Main({refProp}: SectionProps){
 
     const name = 'Arthur V.'
-
+    
     return(
         <>
-        <main className='main'>
+        <main ref={refProp} id='main' className='main'>
             <div className="img">
                 <img src={Picture} alt=""/>
             </div>
@@ -19,7 +23,6 @@ function Main(){
             </div>
         </main>
         <div className="grid"></div>
-        <div className="stain"></div>
         </>
     )
 }

@@ -1,9 +1,13 @@
 import './contact.css'
 
-function Contact(){
+interface SectionProps { 
+    refProp: React.RefObject<HTMLDivElement | null>; 
+}
+
+function Contact({refProp}: SectionProps){
     return(
         <>
-        <div className="contact">
+        <div ref={refProp} className="contact">
             <h1>Contact</h1>
             <div className="card">
                 <div className="card-content">
