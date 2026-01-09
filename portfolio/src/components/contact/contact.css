@@ -10,7 +10,7 @@
     font-weight: 700;
 }
 .card{
-    background-image: url(./../../assets/Profile-Picture.jpeg);
+    background-image: url(./../../assets/contact-picture.jpeg);
     background-size: cover;
     padding: 12.5rem 0rem 0;
     max-height: min(50rem, 85%);
