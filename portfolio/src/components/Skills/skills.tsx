@@ -2,7 +2,6 @@ import EnglishIcon from './../../assets/englishIcon.webp'
 import JavaScriptIcon from './../../assets/javascript icon.webp'
 import ReactIcon from './../../assets/reactIcon.png'
 import TypeScriptIcon from './../../assets/typescript.webp'
-import PortugueseIcon from './../../assets/portugueseIcon.webp'
 import './skills.css'
 
 interface SectionProps { 
