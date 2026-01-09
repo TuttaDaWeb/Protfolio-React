@@ -18,7 +18,7 @@ function Skills({refProp}: SectionProps){
         {skill: "TypeScript", icon: TypeScript},
         {skill: "JavaScript", icon: JavaScriptIcon},
     ])
-
+    setLanguage
     return(
         <>
         <div ref={refProp} className="skills">

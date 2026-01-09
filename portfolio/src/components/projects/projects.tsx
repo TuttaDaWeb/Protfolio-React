@@ -13,7 +13,7 @@ function Projects({refProp}: SectionProps){
         {project: "Anime Login Screen", image: Project1},
         {project: "Milimalistic Login Screen", image: Project2}
     ])
-    
+    setProjects
     return(
         <>
         <div ref={refProp} className="projects-container">
