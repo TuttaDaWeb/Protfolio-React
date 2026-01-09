@@ -25,6 +25,15 @@ function NavBar({onHomeClick, onSkillsClick, onProjectClick, onContactClick}: Na
         }
     }
 
+    const redirrectLinkedInandGitHub = (e: String) => {
+        if(e === "linkedin"){
+            window.location.href = 'https://www.linkedin.com/in/arthur-vieira-coder/';
+        }
+        if(e === "github"){
+            window.location.href = 'https://github.com/TuttaDaWeb';
+        }
+    }
+
     return(
         <>
         <div className="nav">
@@ -42,8 +51,8 @@ function NavBar({onHomeClick, onSkillsClick, onProjectClick, onContactClick}: Na
                         <a onClick={onContactClick}>Contact</a>
                     </div>
                     <div className="social-networks">
-                        <div className="linkedin"><i className="ri-linkedin-box-fill"></i></div>
-                        <div className="github"><i className="ri-github-fill"></i></div>
+                        <div className="linkedin" onClick={() => redirrectLinkedInandGitHub('linkedin')}><i className="ri-linkedin-box-fill"></i></div>
+                        <div className="github" onClick={() => redirrectLinkedInandGitHub('github')}><i className="ri-github-fill"></i></div>
                     </div>
                 </div>
             </div>
