@@ -13,7 +13,7 @@
     background-image: url(./../../assets/contact-picture.jpeg);
     background-size: cover;
     padding: 12.5rem 0rem 0;
-    max-height: min(50rem, 85%);
+    max-height: 40rem;
     border-radius: 2rem;
     overflow: hidden;
     transition: transform .6s ease;
@@ -52,7 +52,9 @@
 .phone, .e-mail, .federal-unit{
     color: rgb(236, 236, 236);
 }
-
+.message-short{
+    color: rgb(136, 136, 228);
+}
 @media(max-width: 884px){
     .card-content{
         transform: translateY(0);
@@ -63,5 +65,6 @@
     .card{
         transform: scale(1.05);
         margin-top: 1rem;
+        padding: 9.5rem 0 0;
     }
 }
