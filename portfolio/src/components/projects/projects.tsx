@@ -25,7 +25,7 @@ function Projects({ refProp }: SectionProps) {
     },{ 
       project: "Day Trade Book Landing Page", 
       image: Project3,
-      description: 'The Development of this website was to solve a problem of an attracted client, They wanted a Landing Page for his Day Trade e-book',
+      description: 'The Development of this website was to solve a problem of an attracted client, They wanted a Landing Page for their Day Trade e-book',
       tools: 'HTML - CSS - React - JavaScript',
       link: 'https://github.com/TuttaDaWeb/My-First-Job' 
     }
