@@ -24,8 +24,14 @@
 .project-portfolio h2{
     font-size: min(6vw, 2rem);
 }
+.project-portfolio p{
+    font-size: min(1.5rem, 5vw);
+}
 .portfolio-desc{
-    width: min(500px, 80%);
+    max-width: 100%;
+}
+.portfolio-desc h5{
+    font-size: min(0.9rem, 3.6vw);
 }
 @media(max-width: 334px){
     .project-portfolio, .project-portfolio img{
