@@ -1,5 +1,5 @@
 .skills{
-    height: 75dvh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,42 +8,41 @@
 .languages{
     padding: 0.8rem;
     width: min(32rem, 80%);
-    height: 20rem;
+    height: auto;
     background: rgba(0, 0, 0, 0.55);
     border-radius: 2em;
     backdrop-filter: blur(12px);
-    overflow: auto;
     animation: languageAnimation 0.8s 1;
-}
-.languagesP{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 1rem;
-    justify-items:center;
+    color: white;
 }
 .languages h1{
     color: white;
     text-align: center;
 }
-.languageSS{
-    width: 100px;
-    height: 115px;
-
+.languagesType{
     display: flex;
     flex-direction: column;
+    padding: 1em;
+}
+.languagesType h2{
+    text-align: center;
+}
+.languagesP{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 1rem;
+    justify-items:center;
+    padding: 0.5rem;
+}
+.languagesSkills{
+    gap: 5px;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    animation: languageAnimation 1.5s 1;
+    flex-direction: column;
 }
-.languageSS h2{
-    color: white;
-}
-.languageSS img{
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
+.languagesSkills img{
+    height: 38px;
 }
 
 @keyframes languageAnimation{
