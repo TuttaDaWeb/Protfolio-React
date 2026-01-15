@@ -14,7 +14,6 @@
     border-radius: 2rem;
     gap: 1.5rem;
     animation: projectAnimation 1.1s 1;
-    cursor: pointer;
 }
 .project-portfolio img{
     border-radius: 1.5rem;
@@ -32,6 +31,38 @@
 }
 .portfolio-desc h5{
     font-size: min(0.9rem, 3.6vw);
+}
+.links-redirect{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.github-redirect, .deployment-redirect{
+    display: flex;
+    padding: 0.6rem;
+    width: auto;
+    height: 2.5rem;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+.github-redirect{
+    background-color: black;
+}
+.deployment-redirect{
+    background-color: rgb(18, 8, 73);
+}
+@media(max-width: 532px){
+    .links-redirect{
+        flex-direction: column;
+        height: 5.5rem;
+        width: min(50%, 80%);
+    }
+    .github-redirect, .deployment-redirect{
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media(max-width: 334px){
     .project-portfolio, .project-portfolio img{
