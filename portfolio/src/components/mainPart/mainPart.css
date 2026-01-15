@@ -103,7 +103,7 @@
         font-size: clamp(1.4rem, 5vw, 2.6rem);
     }
     .grid{
-        height: 115dvh;
+        height: 102dvh;
     }
 }
 @media(max-width: 328px){
