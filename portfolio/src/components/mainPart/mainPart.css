@@ -31,6 +31,17 @@
 .desc p{
     font-size: clamp(0.6rem, 3vw, 1rem);
 }
+.resume-download{
+    margin-top: 1rem;
+    background: #0d0852;
+    padding: 0.6rem;
+    width: 12em;
+    height: 3rem;
+    border: 2px #0d0852 solid;
+    border-radius: 0.5rem;
+    color: white;
+    text-transform: uppercase;
+}
 .img::after, .img::before{
     content: '';
     position: absolute;
@@ -46,8 +57,6 @@
     opacity: 0.4;
     filter: blur(30px);
 }
-
-
 .grid{
     z-index: -100;
     background: url('./../../assets/grid.webp'), #080916;
@@ -91,10 +100,6 @@
     }
     .img{
         width: min(224px, 80%);
-    }
-    .stain{
-        right: 12rem;
-        bottom: 5rem;
     }
     .name{
         width: min(350px, 85%);
