@@ -6,6 +6,7 @@ import HTMLIcon from './../../assets/html-icon.webp'
 import GitIcon from './../../assets/git-icon-logo.webp'
 import VercelIcon from './../../assets/vercel.webp'
 import PortugueseIcon from './../../assets/portugueseIcon.webp'
+import ViteIcon from './../../assets/vite-icon.png'
 import './skills.css'
 
 interface SectionProps { 
@@ -28,6 +29,7 @@ function Skills({ refProp }: SectionProps) {
         skills: [
           { skill: "Git", icon: GitIcon },
           { skill: "Vercel", icon: VercelIcon},
+          { skill: "Vite", icon: ViteIcon},
         ]
       },{
         type: "Languages",
