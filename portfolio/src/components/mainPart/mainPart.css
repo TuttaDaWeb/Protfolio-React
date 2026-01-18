@@ -43,6 +43,11 @@
     border-radius: 0.5rem;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: transform .2s ease-in;
+}
+.resume-download:hover{
+    transform: scale(0.8);
 }
 .img::after, .img::before{
     content: '';
