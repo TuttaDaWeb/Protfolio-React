@@ -1,4 +1,4 @@
-import Picture from './../../assets/profile-picture-2.jpeg'
+import Picture from './../../assets/contact-picture.jpeg'
 import ResumeArthur from './../../assets/Arthur V. Resume.pdf'
 import './mainPart.css'
 
