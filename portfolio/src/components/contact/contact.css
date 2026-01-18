@@ -1,70 +1,45 @@
 .contact{
-    height: 80dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: min(3em, 5vw) min(6em, 6vw);
+    margin: 1rem 1.5rem;
 }
 .contact h1{
+    text-align: center;
     color: white;
-    font-weight: 700;
+    margin-bottom: 4rem;
 }
-.card{
-    background-image: url(./../../assets/contact-picture.jpeg);
-    background-size: cover;
-    padding: 12.5rem 0rem 0;
-    max-height: 40rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    transition: transform .6s ease;
+.contact-items{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
-.card:hover{
-    transform: scale(1.05);
+.whatsapp, .e-mail, .linkedin-2, .github-2{
+    color: rgb(221, 221, 221);
+    width: auto;
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform .2s ease-out;
+    cursor: pointer;
 }
-.card-content{
-    padding: 1.5rem;
-    background: linear-gradient(
-        rgb(0, 0, 0, 0),
-        rgb(0, 0, 0, 0.35) 30%,
-        rgb(0, 0, 0, 1)
-    );
-    transform: translateY(85%);
-    transition: transform .5s ease-in;
+.whatsapp:hover, .e-mail:hover, .linkedin-2:hover, .github-2:hover{
+    transform: scale(1.5);
 }
-.card:hover .card-content{
-    transform: translateY(0);
+.whatsapp-icon, .e-mail-icon, .linkedin-icon, .github-icon{
+    display: flex;
+    width: 52px;
+    height: 52px;
+    padding: 0.5em;
+    background-color: #0b105f;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
 }
-.card-title{
-    font-weight: 600;
-    margin-bottom: 12px;
-    font-size: 1.6rem;
-    color: rgb(5, 26, 53);
-}
-.card-informations{
-    opacity: 0;
-    transition: opacity 450ms ease-in;
-    transition-delay: 360ms;
-}
-.card:hover .card-informations{
-    opacity: 1;
-}
-
-.phone, .e-mail, .federal-unit{
-    color: rgb(236, 236, 236);
-}
-.message-short{
-    color: rgb(136, 136, 228);
-}
-@media(max-width: 884px){
-    .card-content{
-        transform: translateY(0);
-    }
-    .card-informations{
-        opacity: 1;
-    }
-    .card{
-        transform: scale(1.05);
-        margin-top: 1rem;
-        padding: 9.5rem 0 0;
-    }
+.whatsapp b, .e-mail b, .linkedin-2 b, .github-2 b{
+    color: #8d909e;
 }
