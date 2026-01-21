@@ -1,5 +1,6 @@
 import Project1 from './../../assets/anime.png'
 import Project3 from './../../assets/DayTradeBookScreen.png'
+import Project4 from './../../assets/fictional-burger.png'
 import './projects.css'
 
 interface SectionProps { 
@@ -23,6 +24,13 @@ function Projects({ refProp }: SectionProps) {
       tools: 'HTML - CSS - React - JavaScript',
       linkDeploy: 'https://my-first-job-rho.vercel.app/',
       linkGitHub: 'https://github.com/TuttaDaWeb/My-First-Job' 
+    },{ 
+      project: "Fictional Burger Restaurant", 
+      image: Project4,
+      description: 'The Creation of this website had the purpose on getting approval on as many freelancing platform as possible, particularly Workana',
+      tools: 'HTML - CSS - React - JavaScript',
+      linkDeploy: 'https://fictional-burger.vercel.app/',
+      linkGitHub: 'https://github.com/TuttaDaWeb/fictional-burger' 
     }
   ]
 
