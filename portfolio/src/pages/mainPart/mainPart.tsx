@@ -1,5 +1,5 @@
 import Picture from './../../assets/contact-picture.jpeg'
-import ResumeArthur from './../../assets/Arthur V. Resume.pdf'
+import ResumeArthur from './../../assets/Arthur Vieira - Resume in English.pdf'
 import './mainPart.css'
 
 interface SectionProps {  

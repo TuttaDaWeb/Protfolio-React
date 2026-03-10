@@ -1,8 +1,8 @@
-import NavBar from './components/navbar/navBar'
-import Main from './components/mainPart/mainPart'
-import Skills from './components/Skills/skills'
-import Projects from './components/projects/projects'
-import Contact from './components/contact/contact'
+import NavBar from './pages/navbar/navBar'
+import Main from './pages/mainPart/mainPart'
+import Skills from './pages/Skills/skills'
+import Projects from './pages/projects/projects'
+import Contact from './pages/contact/contact'
 import React, { useRef } from 'react'
 import './App.css'
 
