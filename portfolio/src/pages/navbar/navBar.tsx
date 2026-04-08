@@ -35,15 +35,17 @@ function NavBar({onHomeClick, onSkillsClick, onProjectClick, onContactClick}: Na
             <div className={`menu ${toggle ? 'active' : ''} ${isClosing ? 'closing' : ''}`}>
                 <div className="menu_space">
                     <div className="close-part2" onClick={handletoggle}><i className="ri-close-line"></i></div>
-                    <div className="buttons-space">
-                        <a onClick={onHomeClick}>Home</a>
-                        <a onClick={onSkillsClick}>Skills</a>
-                        <a onClick={onProjectClick}>Projects</a>
-                        <a onClick={onContactClick}>Contact</a>
-                    </div>
-                    <div className="social-networks">
-                        <div className="linkedin" onClick={() => window.location.href = 'https://www.linkedin.com/in/arthur-vieira-coder/'}><i className="ri-linkedin-box-fill"></i></div>
-                        <div className="github" onClick={() => window.location.href = 'https://github.com/TuttaDaWeb'}><i className="ri-github-fill"></i></div>
+                    <div className="space">
+                        <div className="buttons-space">
+                            <a onClick={onHomeClick}>Home</a>
+                            <a onClick={onSkillsClick}>Skills</a>
+                            <a onClick={onProjectClick}>Projects</a>
+                            <a onClick={onContactClick}>Contact</a>
+                        </div>
+                        <div className="social-networks">
+                            <div className="linkedin" onClick={() => window.location.href = 'https://www.linkedin.com/in/arthur-vieira-coder/'}><i className="ri-linkedin-box-fill"></i></div>
+                            <div className="github" onClick={() => window.location.href = 'https://github.com/TuttaDaWeb'}><i className="ri-github-fill"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>

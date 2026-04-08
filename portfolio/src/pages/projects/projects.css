@@ -50,9 +50,11 @@
     cursor: pointer;
 }
 .github-redirect{
+    font-weight: 500;
     background-color: black;
 }
 .deployment-redirect{
+    font-weight: 500;
     background-color: rgb(18, 8, 73);
 }
 @media(max-width: 532px){

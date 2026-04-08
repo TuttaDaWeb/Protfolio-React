@@ -15,7 +15,7 @@ function Main({refProp}: SectionProps){
                 <img src={Picture} alt=""/>
             </div>
             <div className="name">
-                <h2>Front-End React Developer</h2>
+                <h2>Front-End React Developer/Freelancer</h2>
                 <div className="desc">
                     <p>I’m a front-end developer specializing in React and TypeScript, with strong skills in JavaScript, HTML, CSS, and Git. I’m passionate about building fast, modern, and responsive websites, always driven by a spirit of leadership and continuous improvement.</p>
                 </div>
