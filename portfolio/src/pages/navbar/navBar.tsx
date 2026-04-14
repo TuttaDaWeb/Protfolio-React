@@ -4,11 +4,10 @@ import  './navBar.css'
 interface NavbarProps { 
     onHomeClick: () => void;
     onSkillsClick: () => void;
-    onProjectClick: () => void;
-    onContactClick: () => void;
+    onProjectClick: () => void
 }
 
-function NavBar({onHomeClick, onSkillsClick, onProjectClick, onContactClick}: NavbarProps){
+function NavBar({onHomeClick, onSkillsClick, onProjectClick }: NavbarProps){
 
     const [toggle, useToggle] = useState<boolean>(false)
     const [isClosing, setClosing] = useState(false)
@@ -40,7 +39,6 @@ function NavBar({onHomeClick, onSkillsClick, onProjectClick, onContactClick}: Na
                             <a onClick={onHomeClick}>Home</a>
                             <a onClick={onSkillsClick}>Skills</a>
                             <a onClick={onProjectClick}>Projects</a>
-                            <a onClick={onContactClick}>Contact</a>
                         </div>
                         <div className="social-networks">
                             <div className="linkedin" onClick={() => window.location.href = 'https://www.linkedin.com/in/arthur-vieira-coder/'}><i className="ri-linkedin-box-fill"></i></div>
