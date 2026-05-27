@@ -30,14 +30,14 @@ function CTA({refProp}: SectionProps){
 
     return(
         <div ref={refProp} className="cta">
-            <div className={`cta-normal ${isUsing ? 'show' : 'hide'} ${isTransiotioning ? 'transition' : ''}`}>
+            <div className={`cta-normal ${isUsing ? 'hide' : 'show'} ${isTransiotioning ? 'transition' : ''}`}>
                 <div className="fiverr-desc">
                     <h1>Want a Portfolio or Landing Page? Hire me on Fiverr</h1>
                     <img src={FiverrLogo} alt="" />
                 </div>
                 <button className="next-fi" onClick={animationHandler}><i className="ri-arrow-right-line"></i></button>
             </div>
-            <div className={`cta-social-links ${isUsing ? 'hide' : 'show'} ${isTransiotioning ? 'transition' : ''}`}>
+            <div className={`cta-social-links ${isUsing ? 'show' : 'hide'} ${isTransiotioning ? 'transition' : ''}`}>
                 <div className="button-back" onClick={animationHandler}><i className="ri-arrow-left-line"></i></div>
                 <div className="all-soical-links">
                     <div id="linkedin-account" onClick={() => window.open('https://www.linkedin.com/in/arthur-vieira-coder/')}>
