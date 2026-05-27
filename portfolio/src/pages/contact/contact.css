@@ -1,0 +1,147 @@
+.cta {
+    min-height: 350px;
+    background-color: #1dbf73; 
+    padding: 4rem 10%; 
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; 
+}
+
+.cta-normal {
+    width: 100%;
+    max-width: 1200px;
+    display: none;
+    opacity: 0;
+}
+
+.cta-normal.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    animation: fade-in 0.5s ease forwards;
+}
+
+.cta-normal.hide {
+    display: none;
+}
+
+.cta-normal.transition {
+    animation: fade-out 0.5s ease forwards;
+}
+.next-fi {
+    width: 12rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    border: 2px solid #ffffff;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #ffffff;
+}
+.next-fi:hover {
+    background-color: #ffffff;
+    color: #1dbf73;
+    transform: scale(1.05);
+}
+
+.next-fi i {
+    font-size: 2.5rem;
+}
+
+.fiverr-desc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.fiverr-desc h1 {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.fiverr-desc img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.cta-social-links.hide {
+    display: none;
+}
+.cta-social-links.show{
+    gap: 1em;
+}
+
+.button-back{
+    font-size: 4.5rem;
+    cursor: pointer;
+}
+
+.all-soical-links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+#linkedin-account, #fi-account{
+    font-size: 4rem;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    color: #1dbf73;
+    transition: 0.5s ease all;
+    text-align: center;
+}
+
+#linkedin-account:hover, #fi-account:hover{
+    transform: scale(0.92);
+    color: #ffffff;
+    background-color: #1dbf73;
+    border: 3px solid #ffffff;
+}
+
+@media (min-width: 768px) {
+    .cta-normal.show {
+        flex-direction: row;
+        text-align: left;
+    }
+    .fiverr-desc {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

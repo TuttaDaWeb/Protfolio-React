@@ -8,6 +8,8 @@ import VercelIcon from './../../assets/vercel.webp'
 import PortugueseIcon from './../../assets/portugueseIcon.webp'
 import ViteIcon from './../../assets/vite-icon.png'
 import LinuxIcon from './../../assets/Icons8_flat_linux.svg.png'
+import NodejsIcon from './../../assets/nodejsicon.webp'
+import ExpressJs from './../../assets/expressjs.png'
 import './skills.css'
 
 interface SectionProps { 
@@ -26,7 +28,7 @@ function Skills({ refProp }: SectionProps) {
           { skill: "HTML5/CSS3", icon: HTMLIcon }
         ]
       },{
-        type: "Adictionals",
+        type: "Additionals",
         skills: [
           { skill: "Git", icon: GitIcon },
           { skill: "Vercel", icon: VercelIcon},
@@ -36,8 +38,14 @@ function Skills({ refProp }: SectionProps) {
       },{
         type: "Languages",
         skills: [
-          { skill: "English", icon: EnglishIcon },
+          { skill: "B2-C1 English", icon: EnglishIcon },
           { skill: "Portuguese", icon: PortugueseIcon}
+        ]
+      },{
+        type: 'Back-end',
+        skills: [
+          { skill: 'Node.js', icon: NodejsIcon },
+          { skill: 'Express.js', icon: ExpressJs }
         ]
       }
     ]
